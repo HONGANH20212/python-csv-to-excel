@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            padding: 2em;
+            text-align: center;
+            position: absolute;
+            top:80px;
+        }
+        h1 {
+            color:skyblue;
+            font-size: 55px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+        input[type="file"] {
+            margin: 1em 0;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: skyblue;
+        }
+        body img{
+            position: absolute;
+            left:0px;
+            top:-20px;
+        }
+        input[type="file"]:hover {
+            background-color: skyblue;
+        }
+        .profile{
+            position: absolute;
+            bottom: 100px;
+            font-size: 20px;
+            color:skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSsFU3MIYuwS8OHEQZHQi2wXXru99bnIhdcyiQ8ccRmLQCondavEeJqIwEG7UwiS77MA&usqp=CAU">
+    <div class="container">
+        <h1>Cloud Cost Estimate Generator</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <br>
+            <input type="submit" value="Upload and Process">
+        </form>
+    </div>
+    <span class="profile">developed by MCU Team</span>
+</body>
+</html>
